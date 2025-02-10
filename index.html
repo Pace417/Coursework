@@ -1,8 +1,65 @@
 <html lang="en">
 <head>
     <title>Sign In</title>
-    <link rel="stylesheet" href="styles.css"> </head>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<div id="shopify-section-websitebg" class="shopify-section">
+<style>
+.bgimg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;  
+    display: block !important;
+    
+    background-image: url("site_bkg_concept.png");
+    
+}
+
+#bg-video_website_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .bgimg{
+
+    }
+}
+
+
+
+
+    @media screen and (max-width: 500px){
+    .bgimg{
+    background-color: none !important;
+    }
+    
+    #bg-video_website {
+    display: none;
+    }
+    #bg-video_website_mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -9;
+    }
+    }
+
+
+
+</style>
+<div class="bgimg"></div>
+  
 <body>
 
     <div class="container">
