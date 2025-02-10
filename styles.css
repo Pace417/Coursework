@@ -1,3 +1,4 @@
+/*
 body {
     display: flex;
     justify-content: center;
@@ -5,7 +6,11 @@ body {
     min-height: 100vh;
     background-image:url("https://www.ariyanhormoz.com/bgb.jpg"); 
   }
-
+*/
+@font-face {
+  font-family: 'MOM_T';
+  src: url('https://cdn.shopify.com/s/files/1/0905/0560/9535/files/MOM_T.woff2?v=1726965328') format('woff2');
+}
   .container {
     background-color: white;
     padding: 20px;
@@ -53,3 +58,90 @@ body {
     margin-top: 10px;
     text-align: center; /* Center the error message */
   }
+
+/* background image css */
+.bgimg{
+  position: fixed;
+  top: 10;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -10;
+  height: 100vh;
+  width: 100vw;  
+  display: block !important;
+  
+  background-image: url("https://www.ariyanhormoz.com/site_bkg_concept.png");
+  
+}
+@media screen and (max-width: 500px){
+  .bgimg{
+
+  }
+}
+
+
+
+
+  @media screen and (max-width: 500px){
+  .bgimg{
+  background-color: none !important;
+  }
+  
+  #bg-video_website {
+  display: none;
+  }
+  #bg-video_website_mobile {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: -9;
+  }
+  }
+
+
+
+
+
+/* "running text" css */
+.running-text {
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.running-text-container {
+  animation: marquee 20s linear infinite;
+  display: inline-block;
+  padding-left: 100%;
+}
+
+.running-text-content {
+  display: inline-block;
+  padding-right: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: ;
+  font-s
+  font-weight: bold;
+}
+span.running-text-content {
+  color: #ffffff !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+
