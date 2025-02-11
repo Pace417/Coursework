@@ -11,13 +11,13 @@ label,
 */
 
 body {
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-image:url("https://www.ariyanhormoz.com/bgb.jpg"); 
     cursor: url("/crosshair.png"), auto !important;
-    overflow-x: hidden;
   }
 @font-face {
   font-family: 'MOM_T';
@@ -116,14 +116,21 @@ h1, h2, h3, .running-text-content, .button, button, label, .error-message {
   }
 
 /* "running text" css */
-.running-text {
+
+#running-text-wrapper {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
-  padding: 15px;
-  top: 0px;
-  left: 0px;
+  z-index: 1;
+
+}
+
+.running-text {
+  overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
+  padding: 15px;
 }
 
 .running-text-container {
