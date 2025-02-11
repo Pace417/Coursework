@@ -1,21 +1,37 @@
 /*
+.wrapper,
+.gradient,
+a,
+.list-menu__item,
+button,
+label,
+.header__icon {
+  cursor: url("/crosshair.png"), auto !important;
+}
+*/
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-image:url("https://www.ariyanhormoz.com/bgb.jpg"); 
+    cursor: url("/crosshair.png"), auto !important;
+    overflow-x: hidden;
   }
-*/
 @font-face {
   font-family: 'MOM_T';
   src: url('https://cdn.shopify.com/s/files/1/0905/0560/9535/files/MOM_T.woff2?v=1726965328') format('woff2');
 }
+h1, h2, h3, .running-text-content, .button, button, label, .error-message {
+  font-family: 'MOM_T' !important;
+}
   .container {
-    background-color: white;
+    background-color: #999999;
+    border: 2px solid #000000;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 0px;
+    box-shadow: 5 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     width: 300px; /* Adjust width as needed */
   }
   
@@ -34,8 +50,9 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    background-color: #cccccc;
+    border: 1px solid #000000;
+    border-radius: 0px;
     box-sizing: border-box; /* Ensures padding is included in width */
   }
   
@@ -45,7 +62,7 @@ body {
     background-color: #4CAF50; /* Green button */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 0px;
     cursor: pointer;
   }
   
@@ -59,10 +76,16 @@ body {
     text-align: center; /* Center the error message */
   }
 
+  h3 {
+    font-size: 25px;
+    color: 999999;
+    margin-bottom: 10px;
+    letter-spacing: 0.4em;
+  }
 /* background image css */
 .bgimg{
-  position: fixed;
-  top: 10;
+  position: fixed;;
+  top: 0;
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,45 +98,32 @@ body {
   background-image: url("https://www.ariyanhormoz.com/site_bkg_concept.png");
   
 }
-@media screen and (max-width: 500px){
-  .bgimg{
 
+  .bgimg2{
+    position: fixed;;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;  
+    display: block !important;
+    
+    background-image: url("/assets/nuke_ramp_w_textce2f.png");
+    
   }
-}
-
-
-
-
-  @media screen and (max-width: 500px){
-  .bgimg{
-  background-color: none !important;
-  }
-  
-  #bg-video_website {
-  display: none;
-  }
-  #bg-video_website_mobile {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  overflow: hidden;
-  z-index: -9;
-  }
-  }
-
-
-
-
 
 /* "running text" css */
 .running-text {
-  padding: 5px;
-  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  padding: 15px;
+  top: 0px;
+  left: 0px;
   white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .running-text-container {
@@ -127,8 +137,6 @@ body {
   padding-right: 100%;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: ;
-  font-s
   font-weight: bold;
 }
 span.running-text-content {
