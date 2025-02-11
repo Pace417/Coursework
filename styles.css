@@ -23,7 +23,7 @@ body {
   font-family: 'MOM_T';
   src: url('https://cdn.shopify.com/s/files/1/0905/0560/9535/files/MOM_T.woff2?v=1726965328') format('woff2');
 }
-h1, h2, h3, .running-text-content, .button, button, label, .error-message {
+h1, h2, h3, .running-text-content, .button, button, label, .error-message, .container {
   font-family: 'MOM_T' !important;
 }
   .container {
